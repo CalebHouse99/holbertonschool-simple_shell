@@ -15,6 +15,26 @@ The \fBENV\fR variable is used when printing out the enviroment variables. This 
 .SH FILES
 _putchar.c, _puts.c, _printf.c, _getmypath.c, _strcmp.c, simpleshell.c
 
+.SH EXAMPLES
+We are able to do many things with this shell, inlcuding but not limited to:
+   
+.RS
+.nf
+\fBls\fR - Lists the non-hidden files and directories in the current directory.
+.P
+.nf
+\fB" "\fR  - Simply typing space and enter, or just enter, simply moves to the next line and shows the prompt again.
+.P
+.nf
+\fB/bin/pwd\fR - Prints the working directory.
+.P
+.nf
+\fBenv\fR - Prints the current environment.
+.P
+.nf
+\fBexit\fR - Exits out of the shell.
+.RE
+
 .SH AUTHOR
 wdmd2022, CalebHouse99
 
