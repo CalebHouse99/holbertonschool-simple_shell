@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - get going
+ * _prompt - get interactive
  * Return: 0 on success, 1 otherwise
  */
 int _prompt(void)

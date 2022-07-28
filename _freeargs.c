@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _freeargs - frees an array of arguments
- * @arguments: array of arguments 
+ * @arguments: array of arguments
  * Return: 0 on success
  */
 int _freeargs(char **arguments)

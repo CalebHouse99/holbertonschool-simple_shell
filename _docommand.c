@@ -24,6 +24,6 @@ int _docommand(char **argumentvectors)
 		return (0);
 	}
 	if (access(argumentvectors[i], F_OK != 0))
-			_printf("%s: No such file or directory\n", argumentvectors[i]);
+		_printf("%s: No such file or directory\n", argumentvectors[i]);
 	return (0);
 }
