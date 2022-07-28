@@ -1,7 +1,42 @@
 .TH SHELL 1 2022-07-28 GNU
 
 .SH NAME
-shell \- interface to the operating system
+hsh \- holberton simple shell, interface to the operating system
 
 .SH SYNOPSIS
 hsh \- [command_file[argument]]
+
+.SH DESCRIPTION
+This is the \fBhsh\fR shell. It's a command interpreter that executes different commands that are inputted from the user if the program exists, otherwise it will return an error. Programs can be run with or without arguments, depending on the program. It will also exit upon typing "exit" and pressing enter. The shell terminates when pressing \fBCTRL + D\fR.
+
+.SH ENVIRONMENT VARIABLE
+The \fBENV\fR variable is used when printing out the enviroment variables. This tells you your hostname, language, timezone, PATH, and more. The PATH is tokenized upon receiving the stdin to check whether or not that program exists. If so, that program is executed, otherwise, an error is returned.
+
+.SH FILES
+_putchar.c, _puts.c, _printf.c, _getmypath.c, _strcmp.c, simpleshell.c
+
+.SH EXAMPLES
+We are able to do many things with this shell, inlcuding but not limited to:
+   
+.RS
+.nf
+\fBls\fR - Lists the non-hidden files and directories in the current directory.
+.P
+.nf
+\fB" "\fR  - Simply typing space and enter, or just enter, simply moves to the next line and shows the prompt again.
+.P
+.nf
+\fB/bin/pwd\fR - Prints the working directory.
+.P
+.nf
+\fBenv\fR - Prints the current environment.
+.P
+.nf
+\fBexit\fR - Exits out of the shell.
+.RE
+
+.SH AUTHOR
+wdmd2022, CalebHouse99
+
+.SH SEE ALSO
+sh, printf(3), putchar, puts
