@@ -10,6 +10,7 @@ int _prompt(void)
 	char leave[] = "exit\n";
 	char vire[] = "env\n";
 	size_t size = 0;
+	char **arguments;
 
 	while (1)
 	{
@@ -26,7 +27,12 @@ int _prompt(void)
 			printenv();
 			continue;
 		}
-		strtok(buffer, " ");
+		else
+		{
+			arguments = _vectorize(buffer);
+			_docommand(arguments);
+			continue;
+		}
 	}
 	free(buffer);
 	return (0);
