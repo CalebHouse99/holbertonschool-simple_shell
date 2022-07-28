@@ -3,7 +3,7 @@
  * main - get going
  * Return: 0 on success, 1 otherwise
  */
-int main(void)
+int _prompt(void)
 {
 	/* char **command; */
 	char *buffer = NULL;
