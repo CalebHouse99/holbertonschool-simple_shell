@@ -41,6 +41,7 @@ int main(int argc, char *argv[] __attribute__((unused)))
 			continue;
 		}
 	}
+/* 	_freeargs(arguments); */
 	if (buffer)
 	{
 		free(buffer);
