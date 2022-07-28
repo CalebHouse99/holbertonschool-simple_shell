@@ -1,0 +1,7 @@
+.TH SHELL 1 2022-07-28 GNU
+
+.SH NAME
+shell \- interface to the operating system
+
+.SH SYNOPSIS
+hsh \- [command_file[argument]]
