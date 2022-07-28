@@ -8,7 +8,7 @@ The goal of this project is to create a simple shell from scratch with limited f
 
 ## Technologies
 
-We created many functions to make our shell work properly. We made our own versions of putchar, puts, and printf to use for this shell. This allows us to show a prompt for the user to begin typing. This input is then taken and parsed to see if there are any commands found within the $PATH. If this is the case, then it will run that program.
+We created many functions to make our shell work properly. We made our own versions of putchar, puts, and printf to use for this shell. We created the `env` variable which shows us our environment, which contains the PATH. We can then grab the PATH from there, and tokenize it so that we can reference it with the input from the user. We display a prompt for the user to begin typing and we can grab input from there. This input is then checked to see if there are any commands found within the PATH. If this is the case, then it will run that program.
 
 ## Examples
 
