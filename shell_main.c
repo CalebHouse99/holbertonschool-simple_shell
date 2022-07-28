@@ -39,9 +39,11 @@ int main(int argc, char *argv[] __attribute__((unused)))
 			arguments = _vectorize(buffer);
 			_docommand(arguments);
 			free(buffer);
+			free(arguments);
 			_freeargs(arguments);
 			continue;
 		}
 	}
 /*	_freeargs(arguments); */
+return (0);
 }
