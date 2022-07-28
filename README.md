@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The goal of this project is to create a simple shell from scratch with limited functions available to us.
+The goal of this project is to create a simple shell from scratch with only certain functions available to us.
 
 ## Technologies
 
@@ -17,4 +17,4 @@ We are able to do many things with this shell, inlcuding but not limited to:\
 ` ` - Simply typing space and enter, or just enter, simply moves to the next line and shows the prompt again.\
 `/bin/pwd` - Prints the working directory.\
 `env` - Prints the current environment.\
-`exit` - Exits out of the shell.\
+`exit` - Exits out of the shell.
