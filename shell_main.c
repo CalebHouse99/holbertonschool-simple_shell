@@ -12,6 +12,7 @@ int main(int argc, char *argv[] __attribute__((unused)))
 	char leave[] = "exit\n";
 	char vire[] = "env\n";
 	size_t size = 0;
+	char **arguments;
 
 	if ((argc == 1) && isatty(0))
 	{
@@ -31,6 +32,12 @@ int main(int argc, char *argv[] __attribute__((unused)))
 		{
 			printenv();
 			free(buffer);
+			continue;
+		}
+		else
+		{
+			arguments = _vectorize(buffer);
+			_docommand(arguments);
 			continue;
 		}
 	}
