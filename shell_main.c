@@ -38,13 +38,10 @@ int main(int argc, char *argv[] __attribute__((unused)))
 		{
 			arguments = _vectorize(buffer);
 			_docommand(arguments);
+			free(buffer);
+			_freeargs(arguments);
 			continue;
 		}
 	}
-/* 	_freeargs(arguments); */
-	if (buffer)
-	{
-		free(buffer);
-	}
-	return (0);
+/*	_freeargs(arguments); */
 }
