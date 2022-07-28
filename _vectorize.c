@@ -23,7 +23,7 @@ char **_vectorize(char *buffer)
 		previous = copy[i];
 		i++;
 	}
-	av = malloc(sizeof(*av) * (howmanyargs + 2));
+	av = malloc(sizeof(*av) * (howmanyargs + 1));
 	argument = strtok(copy, " \n");
 	av[0] = argument;
 	while (argument != NULL)
@@ -33,5 +33,6 @@ char **_vectorize(char *buffer)
 		n++;
 	}
 	av[n] = NULL;
+	/* free(argument); */
 	return (av);
 }

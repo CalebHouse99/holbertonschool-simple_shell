@@ -25,5 +25,6 @@ int _prompt(void);
 char **_vectorize(char *buffer);
 int _docommand(char **argumentvectors);
 char *_strdup(char *str);
+int _freeargs(char **arguments);
 
 #endif /* MAIN_H */
