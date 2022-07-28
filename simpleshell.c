@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char **command;
+	/* char **command; */
 	char *buffer = NULL;
 	char leave[] = "exit\n";
 	char vire[] = "env\n";
@@ -40,7 +40,7 @@ void printenv(void)
 {
 	size_t i;
 
-	for (size_t i = 0; environ[i] != NULL; i++)
+	for (i = 0; environ[i] != NULL; i++)
 	{
 		printf("%s\n", environ[i]);
 	}
