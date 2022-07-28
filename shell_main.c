@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * shell_main - entry point for shell
- * argc: number of arguments passed
- * argv: array of arguments passed
+ * main - entry point for shell
+ * @argc: number of arguments passed
+ * @argv: array of arguments passed
  * Return: 0 if success
  */
-int main(int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	char *buffer = NULL;
 	char leave[] = "exit\n";
@@ -18,9 +18,8 @@ int main(int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 		_prompt();
 		return (0);
 	}
-	while (1)
+	while (getline(&buffer, &size, stdin) != -1)
 	{
-		getline(&buffer, &size, stdin);
 		if (buffer[0] == '\n')
 		{
 			free(buffer);
