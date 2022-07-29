@@ -47,7 +47,7 @@ char **_fullpath(char **patharray, char *programname)
 	int n = 0;
 	char slashy[] = "/";
 
-	char *filesuffix = str_concat(slashy, _strdup(programname));
+	filesuffix = str_concat(slashy, _strdup(programname));
 
 	while (*patharray)
 		n++;
