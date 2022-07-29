@@ -1,0 +1,45 @@
+#include "main.h"
+
+/**
+ * main - test the full path
+ *
+ * Return: nothing lol
+ */
+int main(void)
+{
+	int i = 1;
+	char *thepath;
+	char **patharray;
+	char *directory;
+	int colons = 0;
+	int n, m;
+
+	thepath = _strdup(yourpath());
+
+	printf("value of thepath = %s\n", thepath);
+
+	for (n = 0; thepath[n] != '\0'; n++)
+	{
+		if (thepath[n] == ':')
+			colons++;
+	}
+	printf("value of colons = %i\n", colons);
+
+	patharray = malloc(sizeof(char *) * (colons + 2));
+
+	directory = strtok(thepath, ":");
+	patharray[0] = directory;
+	while (directory != NULL)
+	{
+		directory = strtok(NULL, ":");
+		patharray[i] = directory;
+		i++;
+	}
+	patharray[i] = NULL;
+	for (m = 0; m <= colons; m++)
+	{
+		printf("%s\n", patharray[m]);
+	}
+
+	return (0);
+}

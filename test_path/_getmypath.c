@@ -30,7 +30,7 @@ char **pathify(char *pathpointer)
 		n++;
 	}
 	patharray[n] = NULL;
-	return (patharray);
+	return(patharray);
 }
 
 /**
