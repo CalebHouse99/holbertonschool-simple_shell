@@ -27,6 +27,5 @@ int _docommand(char **argumentvectors);
 char *_strdup(char *str);
 int _freeargs(char **arguments);
 char **pathify(char *pathpointer);
-char *str_concat(char *s1, char *s2);
 
 #endif /* MAIN_H */
