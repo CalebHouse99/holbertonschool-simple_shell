@@ -47,14 +47,14 @@ char **_fullpath(char **patharray, char *programname)
 	int n = 0;
 	char slashy[] = "/";
 
-	filesuffix = str_concat(slashy, _strdup(programname));
+	filesuffix = _str_concat(slashy, _strdup(programname));
 
 	while (*patharray)
 		n++;
 	completepath = malloc(sizeof(char *) * (n + 2));
 	for (i = 0; i < n; i++)
 	{
-		completepath[i] = str_concat(patharray[i], filesuffix);
+		completepath[i] = _str_concat(patharray[i], filesuffix);
 	}
 	completepath[i] = NULL;
 	return (completepath);

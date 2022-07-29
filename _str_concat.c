@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * str_concat - puts ones string after the other and terminates w/ NULL byte
+ * _str_concat - puts ones string after the other and terminates w/ NULL byte
  *
  * @s1: string
  * @s2: string
  *
  * Return: Return pointer to beginning of new string (or NULL if can't)
  */
-char *str_concat(char *s1, char *s2)
+char *_str_concat(char *s1, char *s2)
 {
 	char *new;
 	int x, y, newlength, s1count = 0, s2count = 0;
