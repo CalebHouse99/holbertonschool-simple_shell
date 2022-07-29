@@ -34,8 +34,9 @@ char **_patharray(void)
 	return (patharray);
 }
 /**
- * _fullpath
+ * _fullpath - the full path
  * @patharray: array of strings
+ * @programname: the name of the program
  * Return: array of string
  */
 char **_fullpath(char **patharray, char *programname)
@@ -56,5 +57,5 @@ char **_fullpath(char **patharray, char *programname)
 		completepath[i] = str_concat(patharray[i], filesuffix);
 	}
 	completepath[i] = NULL;
-	return(completepath);
+	return (completepath);
 }
