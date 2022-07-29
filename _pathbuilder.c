@@ -12,7 +12,7 @@ char **_patharray(void)
 	char **patharray;
 	char *directory;
 	int colons = 0;
-	int n, m;
+	int n;
 
 	thepath = _strdup(yourpath());
 
