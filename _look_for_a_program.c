@@ -25,6 +25,14 @@ char *_look_for_a_program(char *name)
 			free(temp);
 			return (pathstring);
 		}
+		else {
+			if (directory)
+				free(directory);
+			if (temp)
+				free(temp);
+			if (pathstring)
+				free(pathstring);
+		}
 		directory = strtok(NULL, ":\n");
 	}
 	perror(name);
