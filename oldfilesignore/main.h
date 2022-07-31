@@ -23,11 +23,8 @@ int _strncmp(char *s1, char *s2, int n);
 int _strlen(char *s);
 int _prompt(void);
 char **_vectorize(char *buffer);
-int _docommand(char **arguments, int status);
+int _docommand(char **argumentvectors);
 char *_strdup(char *str);
 int _freeargs(char **arguments);
-int _interpret_commands(int status, char *buffer);
-char *str_concat(char *s1, char *s2);
-char *_look_for_a_program(char *name);
 
 #endif /* MAIN_H */

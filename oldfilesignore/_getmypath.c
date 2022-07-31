@@ -19,10 +19,7 @@ char *yourpath(void)
 			length = _strlen(environ[i]);
 			compary = malloc(sizeof(char) * (length + 1));
 			if (compary == NULL)
-			{
-				free(compary);
 				return (NULL);
-			}
 			compary = _strcpy(compary, environ[i]);
 			compary += 5;
 			return (compary);
