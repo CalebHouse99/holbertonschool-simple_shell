@@ -28,7 +28,7 @@ char *_look_for_a_program(char *name)
 		directory = strtok(NULL, ":\n");
 	}
 	_printf("%s: No such file or directory\n", name);
-	if(pathstring)
+	if (pathstring)
 		free(pathstring);
 	if (temp)
 		free(temp);
