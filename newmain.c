@@ -24,7 +24,7 @@ int main(void)
 		{
 			free(buffer);
 			fflush(stdin);
-			exit(errno);
+			exit(status);
 		}
 		if (_strcmp(buffer, vire) == 0)
 		{
